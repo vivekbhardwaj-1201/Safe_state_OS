@@ -15,7 +15,7 @@ int main()
                       { 0,6,5,2}, 
                       { 0,6,5,6 } }; 
 
-    int avail[3] = { 3, 3, 2 }; 
+    int avail[4] = { 1,5,2,0 }; 
 
     int f[n], ans[n], ind = 0;
     for (k = 0; k < n; k++) {
