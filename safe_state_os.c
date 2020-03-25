@@ -1,23 +1,21 @@
 int main()
 {
-    // P0, P1, P2, P3, P4 are the Process names here
-
     int n, m, i, j, k;
-    n = 5; // Number of processes
-    m = 4; // Number of resources
-    int alloc[5][4] = { { 0,0,1,2 }, // P0    // Allocation Matrix
-                        { 1,0,0,0 }, // P1
-                        { 1,3,5,4 }, // P2
-                        { 0,6,3,2 }, // P3
-                        { 0,0,1,4 } }; // P4
+    n = 5; 
+    m = 4; 
+    int alloc[5][4] = { { 0,0,1,2 }, 
+                        { 1,0,0,0 }, 
+                        { 1,3,5,4 }, 
+                        { 0,6,3,2 }, 
+                        { 0,0,1,4 } }; 
 
-    int max[5][4] = { { 0, 0, 1,2 }, // P0    // MAX Matrix
-                      {1,7,5,0 }, // P1
-                      { 2,3,5,6}, // P2
-                      { 0,6,5,2}, // P3
-                      { 0,6,5,6 } }; // P4
+    int max[5][4] = { { 0, 0, 1,2 }, 
+                      {1,7,5,0 }, 
+                      { 2,3,5,6},
+                      { 0,6,5,2}, 
+                      { 0,6,5,6 } }; 
 
-    int avail[3] = { 3, 3, 2 }; // Available Resources
+    int avail[3] = { 3, 3, 2 }; 
 
     int f[n], ans[n], ind = 0;
     for (k = 0; k < n; k++) {
